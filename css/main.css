@@ -1,0 +1,127 @@
+/*----------------------- MAIN STUFF -------------------------*/
+*{ margin:0 }
+body { font-family: 'Rajdhani', sans-serif; font-size: 1em;}
+header { background-color: #cc0000; }
+header img { margin-left: 3rem; height: 60px; width: 126px; margin-bottom: -25px;}
+header h2 { margin-left: 3rem;	padding: .8rem; color: #fff;}
+main { padding: 0.5em; /*background-color: #ffe6e6;*/ }
+
+/*--------------navigation-------------------*/
+
+nav ul li.active a {/*Home background*/
+    background-color: #ff6666;
+    color: white;
+}
+
+.hamburger { display: block;position: absolute; top: 2.0rem; left: 0.5rem; background-color: #cc0000; border-color: #cc0000; color: #fff;  }
+.navigation { margin: auto; list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+ @media only screen and (max-width: 37.5em) {
+
+.navigation.responsive { position: relative; }
+.navigation.responsive li { background-color: #ffb3b3;	display: block;	width: 100%; margin: 1.5px 0;}
+.navigation.responsive li a {	padding: 0.5rem; text-align: center;	display: block; text-decoration:none; color: #cc0000; }
+.navigation.responsive li a:hover { background-color: #ff6666; color: #fff;}
+
+}
+
+/*--------------navigation end-------------------*/
+
+
+/*---grid container small view--*/
+
+
+   .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5%; 
+    grid-auto-rows: auto;  
+    grid-gap: 0.5em;
+    text-align: center;
+    font-size: 1.0em;
+    border-style: solid ;
+    border-color:   #cc0000;
+    
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    width: auto;
+    background-color: #fff;
+    padding: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#f5efef ;
+}
+p.box2Sale{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.box2{
+    background-color: #cc0000;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #fff;
+}
+
+.box5, .box6{
+        background-color: #fff;
+        border-style: solid ;
+        border-color:   #cc0000;
+    }
+
+.grid img{
+    width: 95%;  
+}
+
+
+/*---end grid container small view--*/
+
+/*------button---------- */
+.shopButton {
+    -webkit-appearance: none; /*remove the apple mobile default styling*/
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .4em;
+    background: #000;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/*------button style end---------- */
+
+
+/*---end grid container--*/
+/*---footer container--*/
+a:link 
+{ 
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration:none;
+    color: gray;
+} 
+
+.footer-box{
+      background:#e6e6e6;
+    display: flex;
+    padding: 1rem;
+}
+.footb-1 {
+        flex: 1 1 auto;
+      }
+
+.footb-2 {
+        flex: 1 1 auto;
+      }
+
+footer p.copyright {
+  padding: 25px 0;
+  background:#cc0000;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
